@@ -15,9 +15,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/pisces/proprietary/bin/inv_self_test:system/bin/inv_self_test \
     vendor/xiaomi/pisces/proprietary/bin/load_audience_fw.sh:system/bin/load_audience_fw.sh \
     vendor/xiaomi/pisces/proprietary/bin/mount_debugfs.sh:system/bin/mount_debugfs.sh \
+    vendor/xiaomi/pisces/proprietary/bin/nv_hciattach:system/bin/nv_hciattach \
     vendor/xiaomi/pisces/proprietary/bin/nvcap_test:system/bin/nvcap_test \
     vendor/xiaomi/pisces/proprietary/bin/nvcgcserver:system/bin/nvcgcserver \
-    vendor/xiaomi/pisces/proprietary/bin/nv_hciattach:system/bin/nv_hciattach \
     vendor/xiaomi/pisces/proprietary/bin/nvsyncd:system/bin/nvsyncd \
     vendor/xiaomi/pisces/proprietary/bin/nvtest:system/bin/nvtest \
     vendor/xiaomi/pisces/proprietary/bin/power_mode.sh:system/bin/power_mode.sh \
@@ -28,8 +28,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/pisces/proprietary/bin/wlbwservice:system/bin/wlbwservice \
     vendor/xiaomi/pisces/proprietary/etc/android_model_facea.dat:system/etc/android_model_facea.dat \
     vendor/xiaomi/pisces/proprietary/etc/android_model_faceg.dat:system/etc/android_model_faceg.dat \
-    vendor/xiaomi/pisces/proprietary/etc/firmware/audience-es325-fw.bin:system/etc/firmware/audience-es325-fw.bin \
     vendor/xiaomi/pisces/proprietary/etc/firmware/audience-es325-fw-init.bin:system/etc/firmware/audience-es325-fw-init.bin \
+    vendor/xiaomi/pisces/proprietary/etc/firmware/audience-es325-fw.bin:system/etc/firmware/audience-es325-fw.bin \
     vendor/xiaomi/pisces/proprietary/etc/firmware/bcm43341.hcd:system/etc/firmware/bcm43341.hcd \
     vendor/xiaomi/pisces/proprietary/etc/firmware/imc/Flash_Loader.conf:system/etc/firmware/imc/Flash_Loader.conf \
     vendor/xiaomi/pisces/proprietary/etc/firmware/imc/SAM6360.fls:system/etc/firmware/imc/SAM6360.fls \
@@ -56,28 +56,34 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/pisces/proprietary/etc/ril_atc_sprd.config:system/etc/ril_atc_sprd.config \
     vendor/xiaomi/pisces/proprietary/etc/sdm_200_HOG3x3_Grid3x3_bin5_noproj_zero_reduced.bin:system/etc/sdm_200_HOG3x3_Grid3x3_bin5_noproj_zero_reduced.bin \
     vendor/xiaomi/pisces/proprietary/etc/sdm_200_HOG3x3_Grid3x3_bin5_noproj_zero_reduced.bin.pca:system/etc/sdm_200_HOG3x3_Grid3x3_bin5_noproj_zero_reduced.bin.pca \
-    vendor/xiaomi/pisces/proprietary/lib/egl/libEGL_tegra_impl.so:system/lib/egl/libEGL_tegra_impl.so \
     vendor/xiaomi/pisces/proprietary/lib/egl/libEGL_tegra.so:system/lib/egl/libEGL_tegra.so \
-    vendor/xiaomi/pisces/proprietary/lib/egl/libGLESv1_CM_tegra_impl.so:system/lib/egl/libGLESv1_CM_tegra_impl.so \
+    vendor/xiaomi/pisces/proprietary/lib/egl/libEGL_tegra_impl.so:system/lib/egl/libEGL_tegra_impl.so \
     vendor/xiaomi/pisces/proprietary/lib/egl/libGLESv1_CM_tegra.so:system/lib/egl/libGLESv1_CM_tegra.so \
-    vendor/xiaomi/pisces/proprietary/lib/egl/libGLESv2_tegra_impl.so:system/lib/egl/libGLESv2_tegra_impl.so \
+    vendor/xiaomi/pisces/proprietary/lib/egl/libGLESv1_CM_tegra_impl.so:system/lib/egl/libGLESv1_CM_tegra_impl.so \
     vendor/xiaomi/pisces/proprietary/lib/egl/libGLESv2_tegra.so:system/lib/egl/libGLESv2_tegra.so \
-    vendor/xiaomi/pisces/proprietary/lib/hw/audio_policy.tegra.so:system/lib/hw/audio_policy.tegra.so \
+    vendor/xiaomi/pisces/proprietary/lib/egl/libGLESv2_tegra_impl.so:system/lib/egl/libGLESv2_tegra_impl.so \
     vendor/xiaomi/pisces/proprietary/lib/hw/audio.primary.tegra.so:system/lib/hw/audio.primary.tegra.so \
+    vendor/xiaomi/pisces/proprietary/lib/hw/audio_policy.tegra.so:system/lib/hw/audio_policy.tegra.so \
     vendor/xiaomi/pisces/proprietary/lib/hw/camera.tegra.so:system/lib/hw/camera.tegra.so \
     vendor/xiaomi/pisces/proprietary/lib/hw/gps.tegra.so:system/lib/hw/gps.tegra.so \
     vendor/xiaomi/pisces/proprietary/lib/hw/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
     vendor/xiaomi/pisces/proprietary/lib/hw/hwcomposer.tegra.so:system/lib/hw/hwcomposer.tegra.so \
-    vendor/xiaomi/pisces/proprietary/lib/hw/nfc_nci_nfca.default.so:system/lib/hw/nfc_nci_nfca.default.so \
     vendor/xiaomi/pisces/proprietary/lib/hw/nfc.tegra.so:system/lib/hw/nfc.tegra.so \
+    vendor/xiaomi/pisces/proprietary/lib/hw/nfc_nci_nfca.default.so:system/lib/hw/nfc_nci_nfca.default.so \
     vendor/xiaomi/pisces/proprietary/lib/hw/sensors.pisces.so:system/lib/hw/sensors.pisces.so \
+    vendor/xiaomi/pisces/proprietary/lib/libDiracAPI_SHARED.so:system/lib/libDiracAPI_SHARED.so \
+    vendor/xiaomi/pisces/proprietary/lib/libFaceProc.so:system/lib/libFaceProc.so \
     vendor/xiaomi/pisces/proprietary/lib/libardrv_dynamic.so:system/lib/libardrv_dynamic.so \
     vendor/xiaomi/pisces/proprietary/lib/libaudioavp.so:system/lib/libaudioavp.so \
+    vendor/xiaomi/pisces/proprietary/lib/libbeautify.so:system/lib/libbeautify.so \
+    vendor/xiaomi/pisces/proprietary/lib/libbt-client-api.so:system/lib/libbt-client-api.so \
     vendor/xiaomi/pisces/proprietary/lib/libcgdrv.so:system/lib/libcgdrv.so \
-    vendor/xiaomi/pisces/proprietary/lib/libDiracAPI_SHARED.so:system/lib/libDiracAPI_SHARED.so \
+    vendor/xiaomi/pisces/proprietary/lib/libcplconnectclient.so:system/lib/libcplconnectclient.so \
     vendor/xiaomi/pisces/proprietary/lib/libfcamdng.so:system/lib/libfcamdng.so \
-    vendor/xiaomi/pisces/proprietary/lib/libjni_nvremoteprotopkg.so:system/lib/libjni_nvremoteprotopkg.so \
+    vendor/xiaomi/pisces/proprietary/lib/libinvensense_hal.so:system/lib/libinvensense_hal.so \
     vendor/xiaomi/pisces/proprietary/lib/libjni_nvremote.so:system/lib/libjni_nvremote.so \
+    vendor/xiaomi/pisces/proprietary/lib/libjni_nvremoteprotopkg.so:system/lib/libjni_nvremoteprotopkg.so \
+    vendor/xiaomi/pisces/proprietary/lib/libmllite.so:system/lib/libmllite.so \
     vendor/xiaomi/pisces/proprietary/lib/libmplmpu.so:system/lib/libmplmpu.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvapputil.so:system/lib/libnvapputil.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvasfparserhal.so:system/lib/libnvasfparserhal.so \
@@ -85,12 +91,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/pisces/proprietary/lib/libnvaviparserhal.so:system/lib/libnvaviparserhal.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvavp.so:system/lib/libnvavp.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvblit.so:system/lib/libnvblit.so \
-    vendor/xiaomi/pisces/proprietary/lib/libnvcamerahdr.so:system/lib/libnvcamerahdr.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvcam_imageencoder.so:system/lib/libnvcam_imageencoder.so \
-    vendor/xiaomi/pisces/proprietary/lib/libnvcapaudioservice.so:system/lib/libnvcapaudioservice.so \
-    vendor/xiaomi/pisces/proprietary/lib/libnvcapclk.so:system/lib/libnvcapclk.so \
+    vendor/xiaomi/pisces/proprietary/lib/libnvcamerahdr.so:system/lib/libnvcamerahdr.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvcap.so:system/lib/libnvcap.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvcap_video.so:system/lib/libnvcap_video.so \
+    vendor/xiaomi/pisces/proprietary/lib/libnvcapaudioservice.so:system/lib/libnvcapaudioservice.so \
+    vendor/xiaomi/pisces/proprietary/lib/libnvcapclk.so:system/lib/libnvcapclk.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvcms.so:system/lib/libnvcms.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvcontrol_jni.so:system/lib/libnvcontrol_jni.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvcpl.so:system/lib/libnvcpl.so \
@@ -99,47 +105,50 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/pisces/proprietary/lib/libnvfusebypass.so:system/lib/libnvfusebypass.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvglsi.so:system/lib/libnvglsi.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvhdmi3dplay_jni.so:system/lib/libnvhdmi3dplay_jni.so \
+    vendor/xiaomi/pisces/proprietary/lib/libnvmm.so:system/lib/libnvmm.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvmm_audio.so:system/lib/libnvmm_audio.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvmm_camera.so:system/lib/libnvmm_camera.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvmm_contentpipe.so:system/lib/libnvmm_contentpipe.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvmm_image.so:system/lib/libnvmm_image.so \
-    vendor/xiaomi/pisces/proprietary/lib/libnvmmlite_audio.so:system/lib/libnvmmlite_audio.so \
-    vendor/xiaomi/pisces/proprietary/lib/libnvmmlite_image.so:system/lib/libnvmmlite_image.so \
-    vendor/xiaomi/pisces/proprietary/lib/libnvmmlite.so:system/lib/libnvmmlite.so \
-    vendor/xiaomi/pisces/proprietary/lib/libnvmmlite_utils.so:system/lib/libnvmmlite_utils.so \
-    vendor/xiaomi/pisces/proprietary/lib/libnvmmlite_video.so:system/lib/libnvmmlite_video.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvmm_manager.so:system/lib/libnvmm_manager.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvmm_parser.so:system/lib/libnvmm_parser.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvmm_service.so:system/lib/libnvmm_service.so \
-    vendor/xiaomi/pisces/proprietary/lib/libnvmm.so:system/lib/libnvmm.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvmm_utils.so:system/lib/libnvmm_utils.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvmm_video.so:system/lib/libnvmm_video.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvmm_writer.so:system/lib/libnvmm_writer.so \
+    vendor/xiaomi/pisces/proprietary/lib/libnvmmlite.so:system/lib/libnvmmlite.so \
+    vendor/xiaomi/pisces/proprietary/lib/libnvmmlite_audio.so:system/lib/libnvmmlite_audio.so \
+    vendor/xiaomi/pisces/proprietary/lib/libnvmmlite_image.so:system/lib/libnvmmlite_image.so \
+    vendor/xiaomi/pisces/proprietary/lib/libnvmmlite_utils.so:system/lib/libnvmmlite_utils.so \
+    vendor/xiaomi/pisces/proprietary/lib/libnvmmlite_video.so:system/lib/libnvmmlite_video.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvodm_dtvtuner.so:system/lib/libnvodm_dtvtuner.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvodm_hdmi.so:system/lib/libnvodm_hdmi.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvodm_imager.so:system/lib/libnvodm_imager.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvodm_misc.so:system/lib/libnvodm_misc.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvodm_query.so:system/lib/libnvodm_query.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvoice.so:system/lib/libnvoice.so \
+    vendor/xiaomi/pisces/proprietary/lib/libnvomx.so:system/lib/libnvomx.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvomxadaptor.so:system/lib/libnvomxadaptor.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvomxilclient.so:system/lib/libnvomxilclient.so \
-    vendor/xiaomi/pisces/proprietary/lib/libnvomx.so:system/lib/libnvomx.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvopt_dvm.so:system/lib/libnvopt_dvm.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvos.so:system/lib/libnvos.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvparser.so:system/lib/libnvparser.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvremoteevtmgr.so:system/lib/libnvremoteevtmgr.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvremotell.so:system/lib/libnvremotell.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvremoteprotocol.so:system/lib/libnvremoteprotocol.so \
-    vendor/xiaomi/pisces/proprietary/lib/libnvrm_graphics.so:system/lib/libnvrm_graphics.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvrm.so:system/lib/libnvrm.so \
+    vendor/xiaomi/pisces/proprietary/lib/libnvrm_graphics.so:system/lib/libnvrm_graphics.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvsm.so:system/lib/libnvsm.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvstitching.so:system/lib/libnvstitching.so \
+    vendor/xiaomi/pisces/proprietary/lib/libnvtestio.so:system/lib/libnvtestio.so \
+    vendor/xiaomi/pisces/proprietary/lib/libnvtestresults.so:system/lib/libnvtestresults.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvtnr.so:system/lib/libnvtnr.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvtvmr.so:system/lib/libnvtvmr.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvupdater_jni.so:system/lib/libnvupdater_jni.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvwinsys.so:system/lib/libnvwinsys.so \
     vendor/xiaomi/pisces/proprietary/lib/libnvwsi.so:system/lib/libnvwsi.so \
     vendor/xiaomi/pisces/proprietary/lib/libopencv24_tegra.so:system/lib/libopencv24_tegra.so \
+    vendor/xiaomi/pisces/proprietary/lib/libpowerservice_client.so:system/lib/libpowerservice_client.so \
     vendor/xiaomi/pisces/proprietary/lib/libril-xiaomi-sprd.so:system/lib/libril-xiaomi-sprd.so \
     vendor/xiaomi/pisces/proprietary/lib/librm31080.so:system/lib/librm31080.so \
     vendor/xiaomi/pisces/proprietary/lib/librm_ts_service.so:system/lib/librm_ts_service.so \
@@ -148,8 +157,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/pisces/proprietary/lib/libsensors.isl29018.so:system/lib/libsensors.isl29018.so \
     vendor/xiaomi/pisces/proprietary/lib/libsensors.isl29028.so:system/lib/libsensors.isl29028.so \
     vendor/xiaomi/pisces/proprietary/lib/libsensors.mpl.so:system/lib/libsensors.mpl.so \
-    vendor/xiaomi/pisces/proprietary/lib/libtsechdcp.so:system/lib/libtsechdcp.so \
+    vendor/xiaomi/pisces/proprietary/lib/libstlport.so:system/lib/libstlport.so \
+    vendor/xiaomi/pisces/proprietary/lib/libtbb.so:system/lib/libtbb.so \
+    vendor/xiaomi/pisces/proprietary/lib/libtelephonynativeclient.so:system/lib/libtelephonynativeclient.so \
     vendor/xiaomi/pisces/proprietary/lib/libtsec_wrapper.so:system/lib/libtsec_wrapper.so \
+    vendor/xiaomi/pisces/proprietary/lib/libtsechdcp.so:system/lib/libtsechdcp.so \
+    vendor/xiaomi/pisces/proprietary/lib/libwfd_common.so:system/lib/libwfd_common.so \
+    vendor/xiaomi/pisces/proprietary/lib/libwfd_source.so:system/lib/libwfd_source.so \
     vendor/xiaomi/pisces/proprietary/lib/modules/baseband_usb_chr.ko:system/lib/modules/baseband_usb_chr.ko \
     vendor/xiaomi/pisces/proprietary/lib/modules/gps_drv.ko:system/lib/modules/gps_drv.ko \
     vendor/xiaomi/pisces/proprietary/lib/modules/mbt8797.ko:system/lib/modules/mbt8797.ko \
@@ -179,8 +193,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/pisces/proprietary/usr/share/alsa/pcm/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
     vendor/xiaomi/pisces/proprietary/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf \
     vendor/xiaomi/pisces/proprietary/vendor/etc/diracmobile.config:system/vendor/etc/diracmobile.config \
-    vendor/xiaomi/pisces/proprietary/vendor/firmware/bcm43341/fw_bcmdhd_apsta.bin:system/vendor/firmware/bcm43341/fw_bcmdhd_apsta.bin \
     vendor/xiaomi/pisces/proprietary/vendor/firmware/bcm43341/fw_bcmdhd.bin:system/vendor/firmware/bcm43341/fw_bcmdhd.bin \
+    vendor/xiaomi/pisces/proprietary/vendor/firmware/bcm43341/fw_bcmdhd_apsta.bin:system/vendor/firmware/bcm43341/fw_bcmdhd_apsta.bin \
     vendor/xiaomi/pisces/proprietary/vendor/firmware/bcm43341/fw_bcmdhd_mfg.bin:system/vendor/firmware/bcm43341/fw_bcmdhd_mfg.bin \
     vendor/xiaomi/pisces/proprietary/vendor/firmware/bcm43341/fw_bcmdhd_p2p.bin:system/vendor/firmware/bcm43341/fw_bcmdhd_p2p.bin \
     vendor/xiaomi/pisces/proprietary/vendor/firmware/tlv320aic3262_fw_v1.bin:system/vendor/firmware/tlv320aic3262_fw_v1.bin \
