@@ -198,4 +198,5 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/pisces/proprietary/vendor/firmware/bcm43341/fw_bcmdhd_mfg.bin:system/vendor/firmware/bcm43341/fw_bcmdhd_mfg.bin \
     vendor/xiaomi/pisces/proprietary/vendor/firmware/bcm43341/fw_bcmdhd_p2p.bin:system/vendor/firmware/bcm43341/fw_bcmdhd_p2p.bin \
     vendor/xiaomi/pisces/proprietary/vendor/firmware/tlv320aic3262_fw_v1.bin:system/vendor/firmware/tlv320aic3262_fw_v1.bin \
-    vendor/xiaomi/pisces/proprietary/vendor/lib/hw/power.pisces.so:system/vendor/lib/hw/power.pisces.so
+    vendor/xiaomi/pisces/proprietary/vendor/lib/hw/power.pisces.so:system/vendor/lib/hw/power.pisces.so \
+    vendor/xiaomi/pisces/proprietary/lib/libstdc++.so:system/lib/libstdc++.so
